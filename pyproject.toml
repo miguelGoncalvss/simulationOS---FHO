@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simulador-so"
+version = "0.1.0"
+description = "Simulador didático de Sistemas Operacionais orientado a objetos e a eventos discretos"
+authors = [
+    { name = "Miguel Pereira Gonçalves", email = "115333@faculdade.edu" },
+    { name = "Rafael Silva Cruz", email = "114833@faculdade.edu" },
+    { name = "Renato Martins", email = "115944@faculdade.edu" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --strict-markers"

@@ -1,0 +1,59 @@
+{
+  "processes": [
+    {
+      "pid": 1,
+      "arrival_time": 0,
+      "priority": 1,
+      "threads": [
+        {
+          "tid": 1,
+          "priority": 1,
+          "operations": [
+            { "type": "CPU", "duration": 3 },
+            { "type": "IO", "duration": 4 },
+            { "type": "CPU", "duration": 2 }
+          ]
+        },
+        {
+          "tid": 2,
+          "priority": 1,
+          "operations": [
+            { "type": "CPU", "duration": 2 },
+            { "type": "IO", "duration": 3 },
+            { "type": "CPU", "duration": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "arrival_time": 2,
+      "priority": 2,
+      "threads": [
+        {
+          "tid": 1,
+          "priority": 2,
+          "operations": [
+            { "type": "CPU", "duration": 4 },
+            { "type": "IO", "duration": 2 },
+            { "type": "CPU", "duration": 2 }
+          ]
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "arrival_time": 5,
+      "priority": 1,
+      "threads": [
+        {
+          "tid": 1,
+          "priority": 1,
+          "operations": [
+            { "type": "CPU", "duration": 5 }
+          ]
+        }
+      ]
+    }
+  ]
+}
